@@ -10,7 +10,7 @@
 //////////////////////////////////////////////////////////////////
 
 
-package com.leclure.tree.Exerrcise.one;
+package com.leclure.tree.exercise.one;
 
 import java.util.Arrays;
 import java.util.Scanner;
