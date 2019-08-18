@@ -28,6 +28,6 @@ public class Main {
             System.out.print(i++ + " ");
         } while (i < 20);
 
-        
+
     }
 }
