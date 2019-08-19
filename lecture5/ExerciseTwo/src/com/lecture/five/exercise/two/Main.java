@@ -20,21 +20,23 @@ import java.util.Scanner;
 
 public class Main {
 
-//    private static void not(int[] array) {
-//
-//        for (int i = 0; i < 3; i++) {
-//            array[i]++;
-//        }
-//
-//
-//    }
+    private static int sumOfTreeFirstElementIncremented(int[] array) {
+        int sum = 0;
+
+        for (int i = 0; i < 3; i++) {
+            array[i]++;
+            sum += array[i];
+        }
+
+        return sum;
+    }
 
     private static int[] createAndFillingArray() {
         Scanner scanner = new Scanner(System.in);
 
         int[] array;
 
-        System.out.println("Enter the length of array: ");
+        System.out.print("Enter the length of array: ");
         array = new int[scanner.nextInt()];
 
         for (int i = 0; i < array.length; i++) {
@@ -49,12 +51,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int[] array;
+        int sumOfTreeFirstElementIncremented;
 
-        array =  createAndFillingArray();
+        array = createAndFillingArray();
 
-
+        sumOfTreeFirstElementIncremented = sumOfTreeFirstElementIncremented(array);
 
         System.out.println(Arrays.toString(array));
+        System.out.println(sumOfTreeFirstElementIncremented);
 
     }
 }
